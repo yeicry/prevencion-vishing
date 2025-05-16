@@ -1,0 +1,182 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Sobre Nosotros - Prevención de Vishing</title>
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/css/bootstrap.min.css" rel="stylesheet">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta3/css/all.min.css">
+    <style>
+        .hero {
+            background: url('https://via.placeholder.com/1200x400') no-repeat center center;
+            background-size: cover;
+            color: black;
+            padding: 100px 20px;
+            text-align: center;
+        }
+        .team-member {
+            border: 1px solid #ddd;
+            border-radius: 5px;
+            padding: 15px;
+            text-align: center;
+            margin-bottom: 20px;
+        }
+        .footer {
+            background-color: #343a40;
+            color: white;
+            padding: 20px 0;
+        }
+        .star-rating {
+            display: flex;
+            justify-content: center;
+            margin-top: 10px;
+        }
+        .star {
+            color: gold;
+            font-size: 20px;
+            cursor: pointer;
+        }
+    </style>
+</head>
+<body>
+    <nav class="navbar navbar-expand-lg navbar-dark bg-primary sticky-top">
+        <div class="container">
+            <a class="navbar-brand" href="/dashboard.html">Prevención de Vishing</a>
+            <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav">
+                <span class="navbar-toggler-icon"></span>
+            </button>
+            <div class="collapse navbar-collapse" id="navbarNav">
+                <ul class="navbar-nav ms-auto">
+                    <li class="nav-item"><a class="nav-link" href="/dashboard.html">Dashboard</a></li>
+                    <li class="nav-item"><a class="nav-link" href="testimonios.html">Testimonios</a></li>
+                    <li class="nav-item"><a class="nav-link" href="recursos.html">Recursos</a></li>
+                    <li class="nav-item"><a class="nav-link" href="eventos.html">Eventos</a></li>
+                    <li class="nav-item"><a class="nav-link active" href="sobre_nosotros.html">Sobre Nosotros</a></li>
+                    <li class="nav-item"><a class="nav-link" href="/login.html">Cerrar Sesión</a></li>
+                </ul>
+            </div>
+        </div>
+    </nav>
+
+    <div class="hero">
+        <h1>Bienvenidos a Prevención de Vishing</h1>
+        <p>Tu seguridad es nuestra prioridad</p>
+    </div>
+
+    <div class="container mt-4">
+        <h2>¿Quiénes Somos?</h2>
+        <p>La plataforma "Prevención de Vishing" tiene como objetivo educar y concienciar a las personas sobre el vishing y cómo prevenirlo. Ofrecemos cursos, recursos y eventos para ayudar a nuestros usuarios a estar informados y preparados.</p>
+
+        <h3>Conoce a Nuestros Maestros</h3>
+        <div class="row">
+            <div class="col-md-4">
+                <div class="team-member">
+                    <i class="fas fa-user-circle fa-3x"></i>
+                    <h4>Dr. Juan Pérez</h4>
+                    <p>Experto en ciberseguridad, enseña el Curso Básico de Vishing.</p>
+                    <div class="star-rating">
+                        <span class="star" onclick="rate('Juan', 1)">&#9733;</span>
+                        <span class="star" onclick="rate('Juan', 2)">&#9733;</span>
+                        <span class="star" onclick="rate('Juan', 3)">&#9733;</span>
+                        <span class="star" onclick="rate('Juan', 4)">&#9733;</span>
+                        <span class="star" onclick="rate('Juan', 5)">&#9733;</span>
+                    </div>
+                </div>
+            </div>
+            <div class="col-md-4">
+                <div class="team-member">
+                    <i class="fas fa-user-circle fa-3x"></i>
+                    <h4>Lic. María García</h4>
+                    <p>Especialista en fraudes telefónicos, imparte el Curso Intermedio de Vishing.</p>
+                    <div class="star-rating">
+                        <span class="star" onclick="rate('Maria', 1)">&#9733;</span>
+                        <span class="star" onclick="rate('Maria', 2)">&#9733;</span>
+                        <span class="star" onclick="rate('Maria', 3)">&#9733;</span>
+                        <span class="star" onclick="rate('Maria', 4)">&#9733;</span>
+                        <span class="star" onclick="rate('Maria', 5)">&#9733;</span>
+                    </div>
+                </div>
+            </div>
+            <div class="col-md-4">
+                <div class="team-member">
+                    <i class="fas fa-user-circle fa-3x"></i>
+                    <h4>Ing. Carlos Ramírez</h4>
+                    <p>Consultor en tecnologías de la información, encargado del Curso Avanzado de Vishing.</p>
+                    <div class="star-rating">
+                        <span class="star" onclick="rate('Carlos', 1)">&#9733;</span>
+                        <span class="star" onclick="rate('Carlos', 2)">&#9733;</span>
+                        <span class="star" onclick="rate('Carlos', 3)">&#9733;</span>
+                        <span class="star" onclick="rate('Carlos', 4)">&#9733;</span>
+                        <span class="star" onclick="rate('Carlos', 5)">&#9733;</span>
+                    </div>
+                </div>
+            </div>
+            <div class="col-md-4">
+                <div class="team-member">
+                    <i class="fas fa-user-circle fa-3x"></i>
+                    <h4>Prof. Ana López</h4>
+                    <p>Psicóloga y educadora, ofrece talleres sobre prevención de fraudes.</p>
+                    <div class="star-rating">
+                        <span class="star" onclick="rate('Ana', 1)">&#9733;</span>
+                        <span class="star" onclick="rate('Ana', 2)">&#9733;</span>
+                        <span class="star" onclick="rate('Ana', 3)">&#9733;</span>
+                        <span class="star" onclick="rate('Ana', 4)">&#9733;</span>
+                        <span class="star" onclick="rate('Ana', 5)">&#9733;</span>
+                    </div>
+                </div>
+            </div>
+            <div class="col-md-4">
+                <div class="team-member">
+                    <i class="fas fa-user-circle fa-3x"></i>
+                    <h4>Lic. Pedro Martínez</h4>
+                    <p>Investigador en seguridad informática, coordina seminarios sobre nuevas amenazas.</p>
+                    <div class="star-rating">
+                        <span class="star" onclick="rate('Pedro', 1)">&#9733;</span>
+                        <span class="star" onclick="rate('Pedro', 2)">&#9733;</span>
+                        <span class="star" onclick="rate('Pedro', 3)">&#9733;</span>
+                        <span class="star" onclick="rate('Pedro', 4)">&#9733;</span>
+                        <span class="star" onclick="rate('Pedro', 5)">&#9733;</span>
+                    </div>
+                </div>
+            </div>
+            <div class="col-md-4">
+                <div class="team-member">
+                    <i class="fas fa-user-circle fa-3x"></i>
+                    <h4>Ing. Laura Fernández</h4>
+                    <p>Analista de riesgos, responsable de las clases en vivo sobre identificación de intentos de vishing.</p>
+                    <div class="star-rating">
+                        <span class="star" onclick="rate('Laura', 1)">&#9733;</span>
+                        <span class="star" onclick="rate('Laura', 2)">&#9733;</span>
+                        <span class="star" onclick="rate('Laura', 3)">&#9733;</span>
+                        <span class="star" onclick="rate('Laura', 4)">&#9733;</span>
+                        <span class="star" onclick="rate('Laura', 5)">&#9733;</span>
+                    </div>
+                </div>
+            </div>
+        </div>
+
+        <h3>Nuestra Misión</h3>
+        <p>Empoderar a las personas a protegerse contra el vishing a través de la educación y la concienciación.</p>
+
+        <h3>Valores que Nos Guián</h3>
+        <ul>
+            <li>Integridad</li>
+            <li>Innovación</li>
+            <li>Compromiso con la Educación</li>
+            <li>Colaboración</li>
+        </ul>
+    </div>
+
+    <footer class="footer text-center mt-4">
+        <p>© 2025 Universidad O&M. Todos los derechos reservados.</p>
+    </footer>
+
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/js/bootstrap.bundle.min.js"></script>
+    <script>
+        function rate(name, rating) {
+            alert("Has calificado a " + name + " con " + rating + " estrella(s)!");
+            
+        }
+    </script>
+</body>
+</html>

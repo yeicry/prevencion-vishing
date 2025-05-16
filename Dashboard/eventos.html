@@ -1,0 +1,248 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Eventos - Prevención de Vishing</title>
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/css/bootstrap.min.css" rel="stylesheet">
+    <style>
+        body {
+            background-color: #f8f9fa;
+        }
+        .hero {
+            background: url('https://www.ejemplo.com/hero_eventos.jpg') no-repeat center center;
+            background-size: cover;
+            color: black;
+            padding: 100px 0;
+            text-align: center;
+            position: relative;
+        }
+        .hero h1 {
+            font-size: 3rem;
+            text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.7);
+        }
+        .hero p {
+            font-size: 1.5rem;
+        }
+        .card {
+            transition: transform 0.2s;
+            box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
+        }
+        .card:hover {
+            transform: scale(1.05);
+        }
+        .footer {
+            background-color: #007bff;
+            color: white;
+            padding: 10px 0;
+        }
+        .testimonial {
+            background-color: #e9ecef;
+            border-radius: 5px;
+            padding: 20px;
+            margin: 20px 0;
+            position: relative;
+        }
+        .countdown {
+            font-size: 1.5rem;
+            font-weight: bold;
+            color: #dc3545;
+        }
+        .event-category {
+            font-weight: bold;
+            color: #007bff;
+        }
+        .map-container {
+            margin-top: 40px;
+            margin-bottom: 40px;
+        }
+        .registration-form {
+            background-color: #fff;
+            padding: 20px;
+            border-radius: 5px;
+            box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
+        }
+    </style>
+</head>
+<body>
+    <nav class="navbar navbar-expand-lg navbar-dark bg-primary sticky-top">
+        <div class="container">
+            <a class="navbar-brand" href="/dashboard.html">Prevención de Vishing</a>
+            <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav">
+                <span class="navbar-toggler-icon"></span>
+            </button>
+            <div class="collapse navbar-collapse" id="navbarNav">
+                <ul class="navbar-nav ms-auto">
+                    <li class="nav-item"><a class="nav-link" href="/dashboard.html">Dashboard</a></li>
+                    <li class="nav-item"><a class="nav-link active" href="eventos.html">Eventos</a></li>
+                    <li class="nav-item"><a class="nav-link" href="recursos.html">Recursos</a></li>
+                    <li class="nav-item"><a class="nav-link" href="testimonios.html">Testimonios</a></li>
+                    <li class="nav-item"><a class="nav-link" href="sobre_nosotros.html">Sobre Nosotros</a></li>
+                    <li class="nav-item"><a class="nav-link" href="/login.html">Cerrar Sesión</a></li>
+                </ul>
+            </div>
+        </div>
+    </nav>
+
+    <div class="hero">
+        <h1>Eventos y Clases en Vivo</h1>
+        <p>Únete a nuestros eventos para aprender más sobre la prevención del vishing.</p>
+        <a href="#eventos" class="btn btn-light">Explorar Eventos</a>
+    </div>
+
+    <div class="container mt-4" id="eventos">
+        <h2 class="text-center mb-4">Próximos Eventos</h2>
+        <div class="row">
+            <div class="col-md-4">
+                <div class="card mb-4">
+                    <img src="https://www.ejemplo.com/seminario_web.jpg" class="card-img-top" alt="Seminario Web">
+                    <div class="card-body">
+                        <h5 class="card-title">Seminario Web: Prevención de Vishing</h5>
+                        <p class="event-category">Categoría: Seminario</p>
+                        <p class="card-text">Fecha: 15 de junio, 2025<br>Hora: 10:00 AM - 12:00 PM</p>
+                        <p>Únete a nosotros para aprender las mejores prácticas en la prevención de vishing.</p>
+                        <a href="https://www.ejemplo.com/seminario_web" class="btn btn-primary">Registrarse</a>
+                        <p class="countdown" id="countdown1">¡Quedan 10 días!</p>
+                    </div>
+                </div>
+            </div>
+            <div class="col-md-4">
+                <div class="card mb-4">
+                    <img src="https://www.ejemplo.com/taller_seguridad.jpg" class="card-img-top" alt="Taller de Seguridad">
+                    <div class="card-body">
+                        <h5 class="card-title">Taller: Estrategias de Seguridad</h5>
+                        <p class="event-category">Categoría: Taller</p>
+                        <p class="card-text">Fecha: 22 de junio, 2025<br>Hora: 2:00 PM - 4:00 PM</p>
+                        <p>Aprende a protegerte contra el vishing y otros fraudes telefónicos.</p>
+                        <a href="https://www.ejemplo.com/taller_seguridad" class="btn btn-primary">Registrarse</a>
+                        <p class="countdown" id="countdown2">¡Quedan 17 días!</p>
+                    </div>
+                </div>
+            </div>
+            <div class="col-md-4">
+                <div class="card mb-4">
+                    <img src="https://www.ejemplo.com/clase_en_vivo.jpg" class="card-img-top" alt="Clase en Vivo">
+                    <div class="card-body">
+                        <h5 class="card-title">Clase en Vivo: Identificación de Intentos de Vishing</h5>
+                        <p class="event-category">Categoría: Clase en Vivo</p>
+                        <p class="card-text">Fecha: 30 de junio, 2025<br>Hora: 5:00 PM - 6:30 PM</p>
+                        <p>Conoce cómo identificar llamadas de vishing en tiempo real.</p>
+                        <a href="https://www.ejemplo.com/clase_en_vivo" class="btn btn-primary">Registrarse</a>
+                        <p class="countdown" id="countdown3">¡Quedan 25 días!</p>
+                    </div>
+                </div>
+            </div>
+        </div>
+
+        <h2 class="text-center mb-4">Eventos Pasados Destacados</h2>
+        <div class="row">
+            <div class="col-md-4">
+                <div class="card mb-4">
+                    <img src="https://www.ejemplo.com/conferencia_vishing.jpg" class="card-img-top" alt="Conferencia sobre Vishing">
+                    <div class="card-body">
+                        <h5 class="card-title">Conferencia: Nuevas Estrategias de Prevención</h5>
+                        <p class="card-text">Fecha: 5 de julio, 2024</p>
+                        <p>Revisamos las últimas tendencias y técnicas en la prevención del vishing.</p>
+                    </div>
+                </div>
+            </div>
+            <div class="col-md-4">
+                <div class="card mb-4">
+                    <img src="https://www.ejemplo.com/webinar_seguridad.jpg" class="card-img-top" alt="Webinar de Seguridad">
+                    <div class="card-body">
+                        <h5 class="card-title">Webinar: Cómo Protegerte de Fraudes</h5>
+                        <p class="card-text">Fecha: 20 de marzo, 2024</p>
+                        <p>Un evento que reunió a expertos en ciberseguridad para discutir estrategias de protección.</p>
+                    </div>
+                </div>
+            </div>
+            <div class="col-md-4">
+                <div class="card mb-4">
+                    <img src="https://www.ejemplo.com/taller_prevencion.jpg" class="card-img-top" alt="Taller de Prevención">
+                    <div class="card-body">
+                        <h5 class="card-title">Taller: Prevención de Vishing</h5>
+                        <p class="card-text">Fecha: 12 de enero, 2024</p>
+                        <p>Un taller práctico que enseñó a los participantes cómo prevenir el vishing.</p>
+                    </div>
+                </div>
+            </div>
+        </div>
+
+        <h2 class="text-center mb-4">Testimonios de Participantes</h2>
+        <div class="testimonial">
+            <p><strong>Laura Martínez:</strong> "El seminario web fue increíble. Aprendí mucho sobre cómo protegerme del vishing."</p>
+        </div>
+        <div class="testimonial">
+            <p><strong>José López:</strong> "Las clases en vivo son muy interactivas y útiles. ¡Recomiendo participar!"</p>
+        </div>
+
+        <h2 class="text-center mb-4">Mapa de Eventos</h2>
+        <div class="map-container text-center">
+            <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3151.8354345090904!2d144.95373531531658!3d-37.81627997975185!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x6ad642af0f11e3a3%3A0x5045675218cee24!2sUniversidad%20O%26M!5e0!3m2!1ses!2sdo!4v1617891234567!5m2!1ses!2sdo" width="600" height="450" style="border:0;" allowfullscreen="" loading="lazy"></iframe>
+        </div>
+
+        <h2 class="text-center mb-4">Formulario de Registro</h2>
+        <div class="registration-form">
+            <form>
+                <div class="mb-3">
+                    <label for="name" class="form-label">Nombre Completo</label>
+                    <input type="text" class="form-control" id="name" required>
+                </div>
+                <div class="mb-3">
+                    <label for="email" class="form-label">Correo Electrónico</label>
+                    <input type="email" class="form-control" id="email" required>
+                </div>
+                <div class="mb-3">
+                    <label for="event" class="form-label">Selecciona el Evento</label>
+                    <select class="form-select" id="event" required>
+                        <option value="">Selecciona un evento</option>
+                        <option value="seminario">Seminario Web</option>
+                        <option value="taller">Taller de Seguridad</option>
+                        <option value="clase">Clase en Vivo</option>
+                    </select>
+                </div>
+                <button type="submit" class="btn btn-primary">Registrarse</button>
+            </form>
+        </div>
+
+        <h2 class="text-center mb-4">Únete a Nuestra Comunidad</h2>
+        <p class="text-center">Mantente al día con nuestros eventos y noticias. Síguenos en nuestras redes sociales:</p>
+        <div class="text-center mb-4">
+            <a href="https://www.facebook.com/ejemplo" class="btn btn-info mx-2">Facebook</a>
+            <a href="https://www.twitter.com/ejemplo" class="btn btn-info mx-2">Twitter</a>
+            <a href="https://www.instagram.com/ejemplo" class="btn btn-info mx-2">Instagram</a>
+        </div>
+    </div>
+
+    <footer class="footer text-center mt-4">
+        <p>© 2025 Universidad O&M. Todos los derechos reservados.</p>
+    </footer>
+
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/js/bootstrap.bundle.min.js"></script>
+    <script>
+        // Ejemplo de cuenta regresiva (puedes ajustarlo según la fecha real)
+        const countdowns = [
+            { id: 'countdown1', date: new Date('2025-06-15T10:00:00') },
+            { id: 'countdown2', date: new Date('2025-06-22T14:00:00') },
+            { id: 'countdown3', date: new Date('2025-06-30T17:00:00') },
+        ];
+
+        countdowns.forEach(({ id, date }) => {
+            const countdownElement = document.getElementById(id);
+            const updateCountdown = () => {
+                const now = new Date();
+                const timeDiff = date - now;
+                if (timeDiff <= 0) {
+                    countdownElement.innerText = '¡Evento en curso!';
+                    clearInterval(interval);
+                } else {
+                    const days = Math.floor(timeDiff / (1000 * 60 * 60 * 24));
+                    countdownElement.innerText = `¡Quedan ${days} días!`;
+                }
+            };
+            updateCountdown();
+            const interval = setInterval(updateCountdown, 1000 * 60 * 60 * 24); // Actualiza cada día
+        });
+    </script>
+</body>
+</html>

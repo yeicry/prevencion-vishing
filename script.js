@@ -60,7 +60,7 @@ document.addEventListener('DOMContentLoaded', function() {
         const counters = document.querySelectorAll('.display-4.fw-bold');
         
         counters.forEach(counter => {
-            const target = isNaN(Number(counter.innerText.replace(/[^0-9.-]+/g, ''))) ? 0 : Number(counter.innerText.replace(/[^0-9.-]+/g, ''));
+            const target = isNaN(Number(counter.innerText.replace(/[^0-9.-]+/g, '')));
             const duration = 2000; 
             const step = Math.ceil(target / (duration / 20)); 
             
